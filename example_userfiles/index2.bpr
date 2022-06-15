@@ -1,0 +1,14 @@
+:: <_head.bpr>
+  <body class="bg-light">
+:: <_header.bpr>
+:: <_aside.bpr>
+<<div
+  <<section
+    ## TL;DL ##{{sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3}}
+    :: <_article1.bpr>
+    :: <_article2.bpr>
+    :: <_article3.bpr>
+    :: <_article4.bpr>
+  section>>{id="content"}
+div>>{{bd-cheatsheet container-fluid bg-body}}
+:: <_end.bpr>

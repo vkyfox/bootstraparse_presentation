@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A healer's guide to understand healing in raids">
+<meta name="author" content="Vicky Crosia">
+<meta name="generator" content="Hugo 0.88.1">
+<link rel="icon" type="image/x-icon" href="/assets/logo228.png">
+<title>TLDL</title>
+<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cheatsheet/">
+<!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.bd-placeholder-img {
+font-size: 1.125rem;
+text-anchor: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+}
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+font-size: 3.5rem;
+}
+}
+</style>
+<!-- Custom styles for this template -->
+<link href="cheatsheet.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+<div class="container-fluid d-flex align-items-center">
+ <img src="assets/logo.png" height="30" class="me-3" alt="Logo"/> 
+ <h1 class="d-flex align-items-center fs-4 text-white mb-0">TLDL - A healer's guide to understand their co-healer </h1> 
+</div>
+</header>
+<aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
+ <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Jump right in </h2> 
+ <nav id="toc" class="small">
+ <ul class="list-unstyled"> 
+ <li class="my-2"> 
+ <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Understanding my co-healer</button> 
+ <ul class="list-unstyled ps-3 collapse" id="contents-collapse"> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#sge">Sage</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#sch">Scholar</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#ast">Astrologian</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#whm">White Mage</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#group">Honorable mentions</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#roleac">-  Role actions</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#jobac">-  Job specific actions</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#tinvuln">-  Tank invulnerabilites</a></li> 
+ </ul> 
+ </li> 
+ <li class="my-2"> 
+ <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">How to play as a team</button> 
+ <ul class="list-unstyled ps-3 collapse" id="forms-collapse"> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#healing">Healing</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#raiseandlb">Raise and Limit Break</a></li> 
+ </ul> 
+ </li> 
+ <li class="my-2"> 
+ <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#lexicon-collapse" aria-controls="lexicon-collapse">Lexicon</button> 
+ <ul class="list-unstyled ps-3 collapse" id="lexicon-collapse"> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_mitig">Mitigation</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_regen">Regen</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_raiddmg">Raid damage</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_tick">Tick</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_top">To top</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_rptdmg">Repeat damage</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_haction">Healing action</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_hability">Healing ability</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_gtaoe">Ground-targeted AoE</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_prog">Progress</a></li> 
+ <li><a class="d-inline-flex align-items-center rounded" href="#lx_enrage">Enrage</a></li> 
+ </ul> 
+ </li> 
+ </ul> 
+</nav> 
+</aside>
+<div class="bd-cheatsheet container-fluid bg-body">
+ <section id="content">
+ <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">TL;DL </h2> 
+ <article id="st_healerabilities" class="my-3">
+ <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+ <h3>Healer abilities </h3> 
+ <a href="https://na.finalfantasyxiv.com/jobguide/battle/">Official jobguides</a> {{d-flex align-items-center}} 
+</div> 
+ <div>
+ <p class="display-1" id="1">TOO LONG; DIDN'T LEVEL </p> 
+ <p class="lead">Words in italics can be found in the lexicon for more in-depth explanations.</p> 
+ <p class="display-3" id="sge">SAGE </p> 
+ <div class="bd-example">
+ <table class="table table-striped"> 
+ <thead> 
+ <tr> 
+ <th scope="col">Visuals</th> 
+ <th scope="col">CD</th> 
+ <th scope="col">Description</th> 
+ </tr> 
+ </thead> 
+ <tbody> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sge/kardia.png"/><img src="img/sge/kardia_buff.png"/> 
+ </th> 
+ <td>none</td> 
+ <td> <strong>Kardia -</strong> Low heal on the target for every offensive action from the caster.</td> 
+ </tr> 
+ <tr> 
+ <td colspan="3"> 
+ This is Sage's passive healing ability. It will always be active on one person, 
+ usually the main tank, and gives them a noticeable <em>regen</em> . You won't have to heal this person 
+ as much. Note that the icon on the left will always be on the sage himself, while the one on the right 
+ is the one indicating the target. 
+ </td> 
+ </tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sge/kerachole.png"/><img src="img/sge/kerachole_buff.png"/> 
+ </th> 
+ <td>30s</td> 
+ <td> <strong>Kerachole -</strong> 10% <em>mitigation</em> + low <em>regen</em> for 15s.</td> 
+ </tr> 
+ <tr> 
+ <td colspan="3"> 
+ This is the staple for all <em>raid damages</em> , due to its double part <em>regen</em> , 
+ keep an eye out for it being used early before incoming damage, as it can save 
+ you from <em>topping</em> the group yourself. 
+ </td> 
+ </tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sge/physis_II.png"/><img src="img/sge/physis_II_buff.png"/> 
+ </th> 
+ <td>60s</td> 
+ <td> <strong>Physis II -</strong> Medium <em>regen</em> for 15s + 10% <em>healing action</em> buff for 10s.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ Healing buff icon on the left, <em>regen</em> part on the right. 
+ As it is a <em>healing action</em> potency buff, you can forget this effect in most instances. 
+ The regen is potent however, so keep an eye out for it as it will have around 
+ 25% uptime. 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sge/holos.png"/><img src="img/sge/holos_buff.png"/> 
+ </th> 
+ <td>120s</td> 
+ <td> <strong>Holos -</strong> 10% <em>mitigation</em> for 20s + medium heal.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ The 20s duration is the very unusual part about this skill. Very efficient on long 
+ mechanics with lots of <em>repeat damage</em> . The healing part means you don't have to 
+ <em>top</em> if you know your sage is gonna use it. 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sge/panhaima.png"/><img src="img/sge/panhaima_buff.png"/> 
+ </th> 
+ <td>120s</td> 
+ <td> <strong>Panhaima -</strong> 5 times self-reapplying low shield for 15s. Leftover shields heal based on stacks left.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ Very useful for <em>repeat damage</em> , as above. Do not forget the healing part, 
+ as it will rarely ever use its five stacks in 15s. 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sge/pneuma.png"/> 
+ </th> 
+ <td>120s</td> 
+ <td> <strong>Pneuma -</strong> High to Very High burst healing.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ Much harder for you to keep track of, however you should keep it in in mind as 
+ it comes to no DPS loss for the Sage and is extremely potent. 
+ Note that this is a <em>healing action</em> , meaning it benefits from all healing action buffs, 
+ making it even more valuable. 
+ </td></tr> 
+ </tbody> 
+ </table> 
+</div> 
+ <p class="display-3" id="sch">SCHOLAR </p> 
+ <div class="bd-example">
+ <table class="table table-striped"> 
+ <thead> 
+ <tr> 
+ <th scope="col">Visuals</th> 
+ <th scope="col">CD</th> 
+ <th scope="col">Description</th> 
+ </tr> 
+ </thead> 
+ <tbody> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sch/selene.png"/><img src="img/sch/eos.png"/> 
+ </th> 
+ <td>none</td> 
+ <td> <strong>Eos/Selene -</strong> Scholar's passive healing pet. Low heal every 2.5s on the absolute lowest health.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ The faerie will passively heal any party member who goes below 80% HP. She's easily distracted but she's trying her best. Should help in keeping the tanks afloat. 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sch/seraph.png"/><img src="img/sch/seraph_consolation.png"/><img src="img/sch/seraph_whisper.png"/><img src="img/sch/seraph_illumination.png"/> 
+ </th> 
+ <td>120s</td> 
+ <td> <strong>Seraph -</strong> Faerie adds a shield to all of her heals for 20s.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sch/feyunion.png"/><img src="img/sch/feyunion_buff.png"/> 
+ </th> 
+ <td>none</td> 
+ <td> <strong>Fey union -</strong> Extremely strong single-target <em>regen</em> .</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sch/sacredsoil.png"/><img src="img/sch/sacredsoil_buff.png"/> 
+ </th> 
+ <td>30s</td> 
+ <td> <strong>Sacred soil -</strong> <em>Ground-targeted AoE</em> granting 15s <em>mitigation</em> and <em>regen</em> .</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sch/excogitation.png"/><img src="img/sch/excogitation_buff.png"/> 
+ </th> 
+ <td>60s</td> 
+ <td> <strong>Excogitation -</strong> Delayed single-target strong heal.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sch/whisperingdawn.png"/><img src="img/sch/whisperingdawn_buff.png"/> 
+ </th> 
+ <td>60s</td> 
+ <td> <strong>Whispering dawn -</strong> Low <em>regen</em> for 21s.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sch/recitation.png"/><img src="img/sch/deploymenttactics.png"/> 
+ </th> 
+ <td>90s</td> 
+ <td> <strong>Recitation/Deployment tactics -</strong> Automatically crit any heal/Spreads a single-target shield.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sch/feyillumination.png"/><img src="img/sch/feyillumination_buff.png"/> 
+ </th> 
+ <td>120s</td> 
+ <td> <strong>Fey illumination -</strong> 5% <em>mitigation</em> + 10% <em>healing</em> action buff for 20s.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/sch/expedient.png"/><img src="img/sch/expedient_buff.png"/> 
+ </th> 
+ <td>120s</td> 
+ <td> <strong>Expedient -</strong> 10% <em>mitigation</em> + sprint for 20s.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ </tbody> 
+ </table> 
+</div> 
+ <p class="display-3" id="ast">ASTROLOGIAN </p> 
+ <div class="bd-example">
+ <table class="table table-striped"> 
+ <thead> 
+ <tr> 
+ <th scope="col">Visuals</th> 
+ <th scope="col">CD</th> 
+ <th scope="col">Description</th> 
+ </tr> 
+ </thead> 
+ <tbody> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/ast/asphelios.png"/><img src="img/ast/asphelios_buff.png"/> 
+ </th> 
+ <td>60s</td> 
+ <td> <strong>Aspected Helios -</strong> <em>regen</em> . </td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ fulldesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/ast/horoscope.png"/><img src="img/ast/horoscope_buff.png"/> 
+ </th> 
+ <td>60s</td> 
+ <td> <strong>Horoscope -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/ast/estar.png"/> 
+ </th> 
+ <td>60s</td> 
+ <td> <strong>Earthly star -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/ast/copposition.png"/><img src="img/ast/copposition_buff.png"/> 
+ </th> 
+ <td>60s</td> 
+ <td> <strong>Celestial opposition -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/ast/cunconscious.png"/><img src="img/ast/cunconscious_buff.png"/> 
+ </th> 
+ <td>60s</td> 
+ <td> <strong>Collective unconscious -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/ast/nsect.png"/><img src="img/ast/nsect_buff.png"/> 
+ </th> 
+ <td>120s</td> 
+ <td> <strong>Neutral Sect -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/ast/macrocosmos.png"/><img src="img/ast/macrocosmos_buff.png"/> 
+ </th> 
+ <td>180s</td> 
+ <td> <strong>Macrocosmos -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ </tbody> 
+ </table> 
+</div> 
+ <p class="display-3" id="whm">WHITE MAGE </p> 
+ <div class="bd-example">
+ <table class="table table-striped"> 
+ <thead> 
+ <tr> 
+ <th scope="col">Visuals</th> 
+ <th scope="col">CD</th> 
+ <th scope="col">Description</th> 
+ </tr> 
+ </thead> 
+ <tbody> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/whm/medica2.png"/><img src="img/whm/medica2_buff.png"/> 
+ </th> 
+ <td>none</td> 
+ <td> <strong>Medica II -</strong> Low heal and medium <em>regen</em> for 15s</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ fulldesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/whm/cure3.png"/> 
+ </th> 
+ <td>none</td> 
+ <td> <strong>Cure III -</strong> High burst healing</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ fulldesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/whm/asylum.png"/><img src="img/whm/asylum_buff.png"/> 
+ </th> 
+ <td>90s</td> 
+ <td> <strong>Asylum -</strong> <em>Ground-targeted AoE</em> granting low <em>regen</em> and 10% <em>healing action</em> buff for 24s</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/whm/temperance.png"/><img src="img/whm/temperance_buff.png"/> 
+ </th> 
+ <td>120s</td> 
+ <td> <strong>Temperance -</strong> 10% <em>mitigation</em> for 20s</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/whm/lilybell.png"/> 
+ </th> 
+ <td>180s</td> 
+ <td> <strong>Liturgy of the Bell -</strong> 5 times repeat high heal upon damage for 15s. Leftover heals trigger once timer expires.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/whm/bene.png"/> 
+ </th> 
+ <td>180s</td> 
+ <td> <strong>Benediction -</strong> Single-target heal for 100% of the target's HP.</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ </tbody> 
+ </table> 
+</div> 
+</div> 
+</article> 
+ <article id="st_otherabilities" class="my-3">
+ <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+ <h3>Other abilities </h3> 
+ <a href="https://na.finalfantasyxiv.com/jobguide/">Official jobguides</a> {{d-flex align-items-center}} 
+</div> 
+ <div>
+ <p class="display-3" id="group">OTHER GROUP ACTIONS </p> 
+ <p class="display-5" id="roleac">ROLE ACTIONS </p> 
+ <div class="bd-example">
+ <table class="table table-striped"> 
+ <thead> 
+ <tr> 
+ <th scope="col">Visuals</th> 
+ <th scope="col">CD</th> 
+ <th scope="col">Description</th> 
+ </tr> 
+ </thead> 
+ <tbody> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/reprisal.png"/><img src="img/other/reprisal_buff.png"/> 
+ </th> 
+ <td>60s</td> 
+ <td> <strong>Reprisal -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/feint.png"/><img src="img/other/feint_buff.png"/> 
+ </th> 
+ <td>90s</td> 
+ <td> <strong>Feint -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ fulldesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/addle.png"/><img src="img/other/addle_buff.png"/> 
+ </th> 
+ <td>90s</td> 
+ <td> <strong>Addle -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/tactician.png"/><img src="img/other/tactician_buff.png"/><img src="img/other/troubadour.png"/><img src="img/other/troubadour_buff.png"/><img src="img/other/shieldsamba.png"/><img src="img/other/shieldsamba_buff.png"/> 
+ </th> 
+ <td>90s</td> 
+ <td> <strong>Tactitian/Troubadour/Shield samba -</strong> shortdesc</td> 
+ </tr> 
+ <tr><td colspan="3"> 
+ longdesc 
+ </td></tr> 
+ </tbody> 
+ </table> 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="jobac">JOB SPECIFIC </p> 
+ <table class="table table-striped"> 
+ <thead> 
+ <tr> 
+ <th scope="col">Visuals</th> 
+ <th scope="col">Role</th> 
+ <th scope="col">CD</th> 
+ <th scope="col">Description</th> 
+ </tr> 
+ </thead> 
+ <tbody> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/dveil.png"/><img src="img/other/dveil_buff.png"/> 
+ </th> 
+ <td>Paladin</td> 
+ <td>90s</td> 
+ <td> <strong>Divine veil -</strong> shortdesc</td> 
+ </tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/parms.png"/><img src="img/other/parms_buff.png"/> 
+ </th> 
+ <td>Paladin</td> 
+ <td>120s</td> 
+ <td> <strong>Passage of Arms -</strong> shortdesc</td> 
+ </tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/shakeoff.png"/><img src="img/other/shakeoff_buff.png"/> 
+ </th> 
+ <td>Warrior</td> 
+ <td>90s</td> 
+ <td> <strong>Shake it off -</strong> shortdesc</td> 
+ </tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/dmiss.png"/><img src="img/other/dmiss_buff.png"/> 
+ </th> 
+ <td>Dark Knight</td> 
+ <td>90s</td> 
+ <td> <strong>Dark missionary -</strong> shortdesc</td> 
+ </tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/hol.png"/><img src="img/other/hol_buff.png"/> 
+ </th> 
+ <td>Gunbreaker</td> 
+ <td>90s</td> 
+ <td> <strong>Heart of light -</strong> shortdesc</td> 
+ </tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/other/magickbarrier.png"/><img src="img/other/magickbarrier_buff.png"/> 
+ </th> 
+ <td>Red Mage</td> 
+ <td>120s</td> 
+ <td> <strong>Magick Barrier -</strong> shortdesc</td> 
+ </tr> 
+ </tbody> 
+ </table> 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="tinvuln">TANK INVULNERABILITIES </p> 
+ <table class="table table-striped"> 
+ <thead> 
+ <tr> 
+ <th scope="col">Visuals</th> 
+ <th scope="col">Role</th> 
+ <th scope="col">CD</th> 
+ <th scope="col">Description</th> 
+ </tr> 
+ </thead> 
+ <tbody> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/invulns/holm.png"/><img src="img/invulns/holm_buff.png"/> 
+ </th> 
+ <td>Warrior</td> 
+ <td>240s</td> 
+ <td> <strong>Holmgang -</strong> HP cannot go below 1 for 10s.</td> 
+ </tr> 
+ <tr><td colspan="4"> 
+ Very strong for its short cooldown, make sure you wait until half or most of the duration is expended before healing the Warrior, as Holmgang 
+ does not reduce incoming damage and healing someone who can't die is wasteful. Usually, Warriors will use Equilibrium at the end of their Holmgang 
+ for a very high self-heal before loosing their invulnerability status. 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/invulns/ld.png"/><img src="img/invulns/ld_buff.png"/><img src="img/invulns/wd_buff.png"/> 
+ </th> 
+ <td>Dark Knight</td> 
+ <td>300s</td> 
+ <td> <strong>Living dead -</strong> Lasts for 10s. Triggers <strong>Walking dead</strong> instead of KO if HP becomes 0 for the duration.<br/> 
+ <strong>Walking dead -</strong> HP cannot go below 1 for 10s.</td> 
+ </tr> 
+ <tr><td colspan="4"> 
+ Living dead on the left, Walking dead on the right.<br/> 
+ Unapologetically the worse invulnerability in the game. To remove the effect of <strong>Walking dead</strong> , the Dark Knight needs to have recovered 
+ the equivalent of 100% of their HP. If Walking dead is not removed when its timer resolves, the Dark Knight dies immediately.<br/> 
+ In other words you and your co-healer have to heal the Dark Knight for the <strong>equivalent</strong> of their total HP. 
+ This does not mean their current HP needs to be equal to their max HP; this means they need to be healed an amount superior or equal to their maximum HP. 
+ Bear in mind that, once you heal the Dark Knight enough, they will lose Walking Dead and thus their invulnerability status. Hence if you heal your Dark Knight 
+ too much too quickly and dispell Walking Dead before their intended use for it is over, you will kill them.<br> 
+ The White Mage, however, can simply discard their Benediction and resolve the situation at their leisure. 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/invulns/sb.png"/><img src="img/invulns/sb_buff.png"/> 
+ </th> 
+ <td>Gunbreaker</td> 
+ <td>360s</td> 
+ <td> <strong>Superbolide -</strong> HP becomes 1 and makes all incoming damage 0 for 10s.</td> 
+ </tr> 
+ <tr><td colspan="4"> 
+ Don't panic, you have 10s of free time by the end of which you should make sure they have enough hp to survive whatever comes next. 
+ </td></tr> 
+ <tr> 
+ <th scope="row"> 
+ <img src="img/invulns/hg.png"/><img src="img/invulns/hg_buff.png"/> 
+ </th> 
+ <td>Paladin</td> 
+ <td>420s</td> 
+ <td> <strong>Hallowed ground -</strong> Makes all incoming damage 0 for 10s.</td> 
+ </tr> 
+ <tr><td colspan="4"> 
+ Forget about your Paladin for 10 seconds. 
+ </td></tr> 
+ </tbody> 
+ </table> 
+ Note that invulnerabilites do not work on certain very specific damage instances. The most common ones are bosses' <em>enrage</em> damage. 
+</div> 
+</div> 
+</article> 
+ <article id="st_how2heal" class="my-3">
+ <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+ <h3>Play as a team </h3> 
+</div> 
+ <div>
+ <p class="display-1">HOW TO PLAY AS A TEAM </p> 
+ <p class="display-3" id="healing">Healing </p> 
+ <div class="bd-example">
+ <p>What you heal, the other doesn't have to; and conversely what you don't heal, 
+ the other has to. This might sound very obvious, but what that really means is, 
+ always use anything you can.</p> 
+ <p>As a duo, you want to keep everyone above 1HP using as little GCD healing as possible, 
+ so try to use at least one cooldown per raid damage until you don't have any left. If that 
+ happens, then try to figure out whether or not you could have spared a cooldown somewhere. 
+ If you couldn't, then clench your teeth really hard and GCD heal. I reiterate: 
+ as long as your group survives, that's all that matters. Being 1 or 100% HP does not 
+ make a difference. You only need hp as a buffer for taking damage. Don't GCD heal 
+ if no one's gonna die.</p> 
+ <p>On the other end of the spectrum, if there is too little damage and you 
+ sit on a spell for more than its total cooldown, sneak one use of it earlier. 
+ For example: if your first Physis II (60s CD) is at 1 minute 15, use it 
+ during your opener.</p> 
+</div> 
+ <p class="display-3" id="raiseandlb">Raises & Limit Break </p> 
+ <div class="bd-example">
+ <p>Raise priority rule of thumb for <em>progress</em>:</p> 
+ <p style=" 
+ padding-left:1rem; padding:0.4rem; background-color:rgb(235, 235, 235); border-radius:0.2em; 
+ "> 
+ RDM > SMN > WHM > AST > SGE > SCH 
+ </p> 
+ <p>Limit Break priority order rule of thumb:</p> 
+ <p style=" 
+ padding-left:1rem; padding:0.4rem; background-color:rgb(235, 235, 235); border-radius:0.2em; 
+ "> 
+ Regen Healer > Shield Healer 
+ </p> 
+ <p>Order is determined by two factors: mana management and utility. 
+ Raising people is only useful if you can keep them alive. Using 
+ a GCD and a lot of mana / animation locking yourself for 8 seconds 
+ means you can't immediately heal, having a shield healer ready to 
+ mitigate while the other is busy is generally the best option.</p> 
+</div> 
+</div> 
+</article> 
+ <article id="st_lexicon" class="my-3">
+ <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+ <h3>Lexicon </h3> 
+</div> 
+ <div>
+ <p class="display-1" id="lexicon">HEALER TERMINOLOGY </p> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_mitig">Mitigation </p> 
+ <em>Mitigation</em> refers to the reduction of incoming damage via specific spells or actions. Note that mitigation is multiplicative, not additive, 
+ meaning that coupling Holos (10% mitigation) with Kerachole (10% mitigation) will give the party 19% damage reduction instead of the 
+ expected 20%. 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_regen">Regen </p> 
+ <em>Regen</em> , from the name of the White Mage level 35 spell, became the generic term describing any spell or action that is applied once and then <em>ticks</em> 
+ for healing over a duration. 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_tick">Tick </p> 
+ A <em>tick</em> or <em>server tick</em> occurs unreliably every 3s (with up to 0.5s error margin due to server lag or communication lag). 
+ <em>Ticking</em> refers to buffs, debuffs or actions that have an effect occuring every <em>server tick</em> . 
+ Usually healing for buffs and damage for debuffs. Such actions are also referred to as "Healing Over Time" (HoT) or "Damage Over Time" (DoT).<br/> 
+ Hence, for example, Physis II applies a HoT ticking for 130 potency during 15s. 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_raiddmg">Raid damage </p> 
+ A <em>Raid damage</em> describes unavoidable damage that will hit half of the party or more. Also commonly referred to as a "raid wide". 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_top">To top </p> 
+ <em>Topping</em> refers to the action of healing the last 10 to 20% missing HP from party members in preparation for the next raid damage. 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_rptdmg">Repeat damage </p> 
+ <em>Repeat damage</em> refers to bosses dealing several successive raid damages in a very short time period, such as Bahamut and friends' Akh Morn, or Titan's Tumult. 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_haction">Healing action </p> 
+ A <em>healing action</em> designates a spell that specifically triggers your global cooldown (GCD), such as Medica II or Aspected Helios. 
+ By opposition, the vast majority of spells treated in this guide are <em>healing abilities</em> that do not trigger your global cooldown. 
+ Most of the time, healers avoid using <em>healing actions</em> , as they come at a DPS loss; hence making <em>healing actions</em> buffs mostly useless. 
+ Note that <em>actions</em> (and weaponskills, the physical damage counterpart) are often referred to as just GCD by metonimy. 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_hability">Healing ability </p> 
+ A <em>healing ability</em> designates a spell that specifically does not trigger your global cooldown (GCD), such as Physis II or Panhaima. 
+ Note that <em>abilities</em> are often referred to as just oGCD (off global cooldown) by metonimy. 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_gtaoe">Ground-targeted AoE </p> 
+ A <em>Ground-targeted AoE</em> (area of effect) is an ability that is casted on the ground, rather than on a target. It has a visual representation in space 
+ (often referred to as "bubble") and only affects characters actively standing inside of them. The buff they grant is dynamically applied or removed 
+ as a character enters or exits the area for its duration. 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_prog">Progress </p> 
+ <em>Progress</em> refers to the learning process of a fight, by opposition to <em>clear</em> , the step in which the party knows the whole fights 
+ and simply needs to execute it correctly to beat it and <em>re-clears</em> , when the party already has cleared once or multiple times and is simply doing it again 
+ (also commonly referred to as "farm"). 
+</div> 
+ <div class="bd-example">
+ <p class="display-5" id="lx_enrage">Enrage </p> 
+ <em>Enrage</em> refers to the very last action(s) a boss will use before the encounter is over. Typically a raid damage hitting for more than 100 times 
+ anyone's max HP and ignoring invulnerabilites to make extra sure the encounter is over once it has been cast. An encounter's maximum duration is often 
+ referred to as "enrage timer". 
+</div> 
+</div> 
+</article> 
+</section> 
+</div>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="cheatsheet.js"></script>
+</body>
+</html>

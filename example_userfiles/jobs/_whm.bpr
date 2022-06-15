@@ -1,0 +1,74 @@
+!!! WHITE MAGE !!! {id="whm"}
+  <<div
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Visuals</th>
+      <th scope="col">CD</th>
+      <th scope="col">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">
+      @{whm}["medica2"]@{whm}["medica2_buff"]
+      </th>
+      <td>none</td>
+      <td>**Medica II -** Low heal and medium *regen* for 15s</td>
+    </tr>
+    <tr><td colspan="3">
+      fulldesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{whm}["cure3"]
+      </th>
+      <td>none</td>
+      <td>**Cure III -** High burst healing</td>
+    </tr>
+    <tr><td colspan="3">
+      fulldesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{whm}["asylum"]@{whm}["asylum_buff"]
+      </th>
+      <td>90s</td>
+      <td>**Asylum -** *Ground-targeted AoE* granting low *regen* and 10% *healing action* buff for 24s</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{whm}["temperance"]@{whm}["temperance_buff"]
+      </th>
+      <td>120s</td>
+      <td>**Temperance -** 10% *mitigation* for 20s</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{whm}["lilybell"]
+      </th>
+      <td>180s</td>
+      <td>**Liturgy of the Bell -** 5 times repeat high heal upon damage for 15s. Leftover heals trigger once timer expires.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{whm}["bene"]
+      </th>
+      <td>180s</td>
+      <td>**Benediction -** Single-target heal for 100% of the target's HP.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    </tbody>
+  </table>
+  div>>{{bd-example}}

@@ -278,9 +278,10 @@ class PreParser:
         :keyword var_dict: the dictionary of variables to replace in the message
         :type var_dict: dict[str, str]
         """
+        print(*var_list, **var_dict)
         try:
             return message.format(*var_list, **var_dict)
-        except (KeyError, IndexError) as e:
+        except (KeyError, IndexError, ValueError) as e:
             error_mngr.log_message(
                 'Could not find appropriate replacement values in options provided'
                 f'"{message}" : {var_list}, {var_dict}'
