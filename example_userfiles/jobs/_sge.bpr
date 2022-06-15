@@ -1,0 +1,92 @@
+!!! SAGE !!! {id="sge"}
+<<div
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">Visuals</th>
+    <th scope="col">CD</th>
+    <th scope="col">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th scope="row">
+    @{sge}["kardia"] @{sge}["kardia_buff"]
+    </th>
+    <td>none</td>
+    <td>**Kardia -** Low heal on the target for every offensive action from the caster.</td>
+  </tr>
+  <tr>
+    <td colspan="3">
+    This is Sage's passive healing ability. It will always be active on one person,
+    usually the main tank, and gives them a noticeable *regen*. You won't have to heal this person
+    as much. Note that the icon on the left will always be on the sage himself, while the one on the right
+    is the one indicating the target.
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+    @{sge}["kerachole"] @{sge}["kerachole_buff"]
+    </th>
+    <td>30s</td>
+    <td>**Kerachole -** 10% *mitigation* + low *regen* for 15s.</td>
+  </tr>
+  <tr>
+    <td colspan="3">
+    This is the staple for all *raid damages*, due to its double part *regen*,
+    keep an eye out for it being used early before incoming damage, as it can save
+    you from *topping* the group yourself.
+    </td>
+  </tr>
+  <tr>
+    <th scope="row">
+    @{sge}["physis_II"] @{sge}["physis_II_buff"]
+    </th>
+    <td>60s</td>
+    <td>**Physis II -** Medium *regen* for 15s + 10% *healing action* buff for 10s.</td>
+  </tr>
+  <tr><td colspan="3">
+    Healing buff icon on the left, *regen* part on the right.
+    As it is a *healing action* potency buff, you can forget this effect in most instances.
+    The regen is potent however, so keep an eye out for it as it will have around
+    25% uptime.
+  </td></tr>
+  <tr>
+    <th scope="row">
+    @{sge}["holos"] @{sge}["holos_buff"]
+    </th>
+    <td>120s</td>
+    <td>**Holos -** 10% *mitigation* for 20s + medium heal.</td>
+  </tr>
+  <tr><td colspan="3">
+    The 20s duration is the very unusual part about this skill. Very efficient on long
+    mechanics with lots of *repeat damage*. The healing part means you don't have to
+    *top* if you know your sage is gonna use it.
+  </td></tr>
+  <tr>
+    <th scope="row">
+    @{sge}["panhaima"] @{sge}["panhaima_buff"]
+    </th>
+    <td>120s</td>
+    <td>**Panhaima -** 5 times self-reapplying low shield for 15s. Leftover shields heal based on stacks left.</td>
+  </tr>
+  <tr><td colspan="3">
+    Very useful for *repeat damage*, as above. Do not forget the healing part,
+    as it will rarely ever use its five stacks in 15s.
+  </td></tr>
+  <tr>
+    <th scope="row">
+    @{sge}["pneuma"]
+    </th>
+    <td>120s</td>
+    <td>**Pneuma -** High to Very High burst healing.</td>
+  </tr>
+  <tr><td colspan="3">
+    Much harder for you to keep track of, however you should keep it in in mind as
+    it comes to no DPS loss for the Sage and is extremely potent.
+    Note that this is a *healing action*, meaning it benefits from all healing action buffs,
+    making it even more valuable.
+  </td></tr>
+  </tbody>
+</table>
+div>>{{bd-example}}

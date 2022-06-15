@@ -3,8 +3,8 @@
         ### Play as a team ###
       div>>{{bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2}}
       <<div
-        <p class="display-1">HOW TO PLAY AS A TEAM</p>
-        <p class="display-3" id="healing">Healing</p>
+        ! HOW TO PLAY AS A TEAM !
+        !!! Healing !!! {id="healing"}
         <<div
           <p>What you heal, the other doesn't have to; and conversely what you don't heal,
             the other has to. This might sound very obvious, but what that really means is,
@@ -21,14 +21,18 @@
             For example: if your first Physis II (60s CD) is at 1 minute 15, use it
             during your opener.</p>
         div>>{{bd-example}}
-        <p class="display-3" id="raiseandlb">Raises & Limit Break</p>
+        !!! Raises & Limit Break !!! {id="raiseandlb"}
         <<div
           <p>Raise priority rule of thumb for <em>progress</em>:</p>
-          <p style="padding-left:1rem; padding:0.4rem; background-color:rgb(235, 235, 235); border-radius:0.2em;">
+          <p style="
+          @[temp_blockquote]
+          ">
             RDM > SMN > WHM > AST > SGE > SCH
           </p>
           <p>Limit Break priority order rule of thumb:</p>
-          <p style="padding-left:1rem; padding:0.4rem; background-color:rgb(235, 235, 235); border-radius:0.2">
+          <p style="
+          @[temp_blockquote]
+          ">
             Regen Healer > Shield Healer
           </p>
           <p>Order is determined by two factors: mana management and utility.

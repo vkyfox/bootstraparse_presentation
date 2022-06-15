@@ -3,66 +3,66 @@
         ### Lexicon ###
       div>>{{bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2}}
       <<div
-        <p class="display-1" id="lexicon">HEALER TERMINOLOGY</p>
+        ! HEALER TERMINOLOGY ! {id="lexicon"}
         <<div
-          <p class="display-5" id="lx_mitig">Mitigation</p>
-          <p>*Mitigation* refers to the reduction of incoming damage via specific spells or actions. Note that mitigation is multiplicative, not additive,
+          !!!!! Mitigation !!!!! {id="lx_mitig"}
+          *Mitigation* refers to the reduction of incoming damage via specific spells or actions. Note that mitigation is multiplicative, not additive,
           meaning that coupling Holos (10% mitigation) with Kerachole (10% mitigation) will give the party 19% damage reduction instead of the
-          expected 20%.</p>
+          expected 20%.
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_regen">Regen</p>
-          <p>*Regen*, from the name of the White Mage level 35 spell, became the generic term describing any spell or action that is applied once and then *ticks*
-            for healing over a duration.</p>
+          !!!!! Regen !!!!! {id="lx_regen"}
+          *Regen*, from the name of the White Mage level 35 spell, became the generic term describing any spell or action that is applied once and then *ticks*
+            for healing over a duration.
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_tick">Tick</p>
-          <p>A *tick* or *server tick* occurs unreliably every 3s (with up to 0.5s error margin due to server lag or communication lag).
+          !!!!! Tick !!!!! {id="lx_tick"}
+          A *tick* or *server tick* occurs unreliably every 3s (with up to 0.5s error margin due to server lag or communication lag).
             *Ticking* refers to buffs, debuffs or actions that have an effect occuring every *server tick*.
-            Usually healing for buffs and damage for debuffs. Such actions are also refered to as "Healing Over Time" (HoT) or "Damage Over Time" (DoT).<br/>
-            Hence, for example, Physis II applies a HoT ticking for 130 potency during 15s.</p>
+            Usually healing for buffs and damage for debuffs. Such actions are also referred to as "Healing Over Time" (HoT) or "Damage Over Time" (DoT).<br/>
+            Hence, for example, Physis II applies a HoT ticking for 130 potency during 15s.
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_raiddmg">Raid damage</p>
-          <p>A *Raid damage* describes unavoidable damage that will hit half of the party or more. Also commonly referred to as a "raid wide".</p>
+          !!!!! Raid damage !!!!! {id="lx_raiddmg"}
+          A *Raid damage* describes unavoidable damage that will hit half of the party or more. Also commonly referred to as a "raid wide".
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_top">To top</p>
-          <p>*Topping* refers to the action of healing the last 10 to 20% missing HP from party members in preparation for the next raid damage.</p>
+          !!!!! To top !!!!! {id="lx_top"}
+          *Topping* refers to the action of healing the last 10 to 20% missing HP from party members in preparation for the next raid damage.
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_rptdmg">Repeat damage</p>
-          <p>*Repeat damage* refers to bosses dealing several successive raid damages in a very short time period, such as Bahamut and friends' Akh Morn, or Titan's Tumult.</p>
+          !!!!! Repeat damage !!!!! {id="lx_rptdmg"}
+          *Repeat damage* refers to bosses dealing several successive raid damages in a very short time period, such as Bahamut and friends' Akh Morn, or Titan's Tumult.
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_haction">Healing action</p>
-          <p>A *healing action* designates a spell that specifically triggers your global cooldown (GCD), such as Medica II or Aspected Helios.
+          !!!!! Healing action !!!!! {id="lx_haction"}
+          A *healing action* designates a spell that specifically triggers your global cooldown (GCD), such as Medica II or Aspected Helios.
             By opposition, the vast majority of spells treated in this guide are *healing abilities* that do not trigger your global cooldown.
-            Most of the time, healers avoid using *healing actions*, as they come at a DPS loss; hence making *healing actions* buffs mostly useless.</p>
-          <p>Note that *actions* (and weaponskills, the physical damage counterpart) are often refered to as just GCD by metonimy.</p>
+            Most of the time, healers avoid using *healing actions*, as they come at a DPS loss; hence making *healing actions* buffs mostly useless.
+          Note that *actions* (and weaponskills, the physical damage counterpart) are often referred to as just GCD by metonimy.
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_hability">Healing ability</p>
-          <p>A *healing ability* designates a spell that specifically does not trigger your global cooldown (GCD), such as Physis II or Panhaima.</p>
-          <p>Note that *abilities* are often refered to as just oGCD (off global cooldown) by metonimy.</p>
+          !!!!! Healing ability !!!!! {id="lx_hability"}
+          A *healing ability* designates a spell that specifically does not trigger your global cooldown (GCD), such as Physis II or Panhaima.
+          Note that *abilities* are often referred to as just oGCD (off global cooldown) by metonimy.
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_gtaoe">Ground-targeted AoE</p>
-          <p>A *Ground-targeted AoE* (area of effect) is an ability that is casted on the ground, rather than on a target. It has a visual representation in space
-            (often reffered to as "bubble") and only affects characters actively standing inside of them. The buff they grant is dynamically applied or removed
-            as a character enters or exits the area for its duration.</p>
+          !!!!! Ground-targeted AoE !!!!! {id="lx_gtaoe"}
+          A *Ground-targeted AoE* (area of effect) is an ability that is casted on the ground, rather than on a target. It has a visual representation in space
+            (often referred to as "bubble") and only affects characters actively standing inside of them. The buff they grant is dynamically applied or removed
+            as a character enters or exits the area for its duration.
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_prog">Progress</p>
-          <p>*Progress* refers to the learning process of a fight, by opposition to *clear*, the step in which the party knows the whole fights
+          !!!!! Progress !!!!! {id="lx_prog"}
+          *Progress* refers to the learning process of a fight, by opposition to *clear*, the step in which the party knows the whole fights
           and simply needs to execute it correctly to beat it and *re-clears*, when the party already has cleared once or multiple times and is simply doing it again
-          (also commonly refered to as "farm").</p>
+          (also commonly referred to as "farm").
         div>>{{bd-example}}
         <<div
-          <p class="display-5" id="lx_enrage">Enrage</p>
-          <p>*Enrage* refers to the very last action(s) a boss will use before the encounter is over. Typically a raid damage hitting for more than 100 times
+          !!!!! Enrage !!!!! {id="lx_enrage"}
+          *Enrage* refers to the very last action(s) a boss will use before the encounter is over. Typically a raid damage hitting for more than 100 times
           anyone's max HP and ignoring invulnerabilites to make extra sure the encounter is over once it has been cast. An encounter's maximum duration is often
-          refered to as "enrage timer".</p>
+          referred to as "enrage timer".
         div>>{{bd-example}}
       div>>
     article>>{{my-3}} {id="st_lexicon"}

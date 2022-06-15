@@ -1,0 +1,84 @@
+!!! ASTROLOGIAN !!! {id="ast"}
+  <<div
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Visuals</th>
+      <th scope="col">CD</th>
+      <th scope="col">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">
+      @{ast}["asphelios"] @{ast}["asphelios_buff"]
+      </th>
+      <td>60s</td>
+      <td>**Aspected Helios -** *regen*. </td>
+    </tr>
+    <tr><td colspan="3">
+      fulldesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{ast}["horoscope"] @{ast}["horoscope_buff"]
+      </th>
+      <td>60s</td>
+      <td>**Horoscope -** shortdesc</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{ast}["estar"]
+      </th>
+      <td>60s</td>
+      <td>**Earthly star -** shortdesc</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{ast}["copposition"] @{ast}["copposition_buff"]
+      </th>
+      <td>60s</td>
+      <td>**Celestial opposition -** shortdesc</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{ast}["cunconscious"] @{ast}["cunconscious_buff"]
+      </th>
+      <td>60s</td>
+      <td>**Collective unconscious -** shortdesc</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{ast}["nsect"] @{ast}["nsect_buff"]
+      </th>
+      <td>120s</td>
+      <td>**Neutral Sect -** shortdesc</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{ast}["macrocosmos"] @{ast}["macrocosmos_buff"]
+      </th>
+      <td>180s</td>
+      <td>**Macrocosmos -** shortdesc</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    </tbody>
+  </table>
+  div>>{{bd-example}}

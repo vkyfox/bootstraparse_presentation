@@ -3,9 +3,15 @@ shortcuts:
   do_not_remove_f: 'This is a test {} {} {a} {b}'
   end_article: 'article>>\{\{my-3\}\} \{id="{}"\}'
   structural_div_1: 'bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2'
+  temp_blockquote: 'padding-left:1rem; padding:0.4rem; background-color:rgb(235, 235, 235); border-radius:0.2em;'
 
 images:
-  sge: 'img/sge/{}.png'
   logo: 'assets/logo.png'
+  sge: 'img/sge/{}.png'
+  sch: 'img/sch/{}.png'
+  ast: 'img/ast/{}.png'
+  whm: 'img/whm/{}.png'
+  other: 'img/other/{}.png'
+  invulns: 'img/invulns/{}.png'
   do_not_remove_p: 'This is a test'
   do_not_remove_f: 'This is a test {} {} {a} {b}'
