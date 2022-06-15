@@ -17,9 +17,7 @@
               </thead>
               <tbody>
               <tr>
-                <th scope="row">
-                @{other}["reprisal"]@{other}["reprisal_buff"]
-                </th>
+                <th scope="row">@{other}["reprisal"]@{other}["reprisal_buff"]</th>
                 <td>60s</td>
                 <td>**Reprisal -** shortdesc</td>
               </tr>
