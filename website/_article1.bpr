@@ -1,0 +1,14 @@
+<<article
+      <<div
+        ### Healer abilities ###
+        [Official jobguides]("https://na.finalfantasyxiv.com/jobguide/battle/"){{d-flex align-items-center}}
+      div>>{{bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2}}{}
+      <<div
+        ! TOO LONG; DIDN'T LEVEL ! {id="1"}
+        <p class="lead">Words in italics can be found in the lexicon for more in-depth explanations.</p>
+        :: <jobs/_sge.bpr>
+        :: <jobs/_sch.bpr>
+        :: <jobs/_ast.bpr>
+        :: <jobs/_whm.bpr>
+        div>>
+      article>>{{my-3}}{id="st_healerabilities"}

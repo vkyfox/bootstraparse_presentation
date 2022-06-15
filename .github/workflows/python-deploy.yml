@@ -26,7 +26,7 @@ jobs:
           pip install -r requirements.txt
           pip install -e .
           pip install pydoctor
-          python -m bootstraparse "example_userfiles" "docs"
+          python -m bootstraparse "website" "docs"
       - name: Build the documentation
         run: |
           pydoctor --make-html --html-output=docs/apidoc src/bootstraparse/
