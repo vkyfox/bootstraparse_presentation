@@ -1,10 +1,11 @@
 shortcuts:
   do_not_remove_s: 'This is a test'
   do_not_remove_f: 'This is a test {} {} {a} {b}'
-  end_article: 'article>>{{my-3}} {id="{}"}'
+  end_article: 'article>>\{\{my-3\}\} \{id="{}"\}'
   structural_div_1: 'bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2'
 
 images:
   sge: 'img/sge/{}.png'
+  logo: 'assets/logo.png'
   do_not_remove_p: 'This is a test'
   do_not_remove_f: 'This is a test {} {} {a} {b}'

@@ -1,0 +1,168 @@
+<<article
+        <<div
+          ### Other abilities ###
+          [Official jobguides]("https://na.finalfantasyxiv.com/jobguide/"){{d-flex align-items-center}}
+        div>>{{bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2}}
+        <<div
+          <p class="display-3" id="group">OTHER GROUP ACTIONS</p>
+          <p class="display-5" id="roleac">ROLE ACTIONS</p>
+          <<div
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th scope="col">Visuals</th>
+                <th scope="col">CD</th>
+                <th scope="col">Description</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row"><img src="img/other/reprisal.png"/><img src="img/other/reprisal_buff.png"/></th>
+                <td>60s</td>
+                <td>**Reprisal -** shortdesc</td>
+              </tr>
+              <tr><td colspan="3">
+                longdesc
+              </td></tr>
+              <tr>
+                <th scope="row"><img src="img/other/feint.png"/><img src="img/other/feint_buff.png"/></th>
+                <td>90s</td>
+                <td>**Feint -** shortdesc</td>
+              </tr>
+              <tr><td colspan="3">
+                fulldesc
+              </td></tr>
+              <tr>
+                <th scope="row"><img src="img/other/addle.png"/><img src="img/other/addle_buff.png"/></th>
+                <td>90s</td>
+                <td>**Addle -** shortdesc</td>
+              </tr>
+              <tr><td colspan="3">
+                longdesc
+              </td></tr>
+              <tr>
+                <th scope="row"><img src="img/other/tactician.png"/><img src="img/other/tactician_buff.png"/><img src="img/other/troubadour.png"/><img src="img/other/troubadour_buff.png"/><img src="img/other/shieldsamba.png"/><img src="img/other/shieldsamba_buff.png"/></th>
+                <td>90s</td>
+                <td>**Tactitian/Troubadour/Shield samba -** shortdesc</td>
+              </tr>
+              <tr><td colspan="3">
+                longdesc
+              </td></tr>
+              </tbody>
+            </table>
+          div>>{{bd-example}}
+      <<div
+        <p class="display-5" id="jobac">JOB SPECIFIC</p>
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col">Visuals</th>
+            <th scope="col">Role</th>
+            <th scope="col">CD</th>
+            <th scope="col">Description</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><img src="img/other/dveil.png"/><img src="img/other/dveil_buff.png"/></th>
+              <td>Paladin</td>
+              <td>90s</td>
+              <td>**Divine veil -** shortdesc</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="img/other/parms.png"/><img src="img/other/parms_buff.png"/></th>
+              <td>Paladin</td>
+              <td>120s</td>
+              <td>**Passage of Arms -** shortdesc</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="img/other/shakeoff.png"/><img src="img/other/shakeoff_buff.png"/></th>
+              <td>Warrior</td>
+              <td>90s</td>
+              <td>**Shake it off -** shortdesc</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="img/other/dmiss.png"/><img src="img/other/dmiss_buff.png"/></th>
+              <td>Dark Knight</td>
+              <td>90s</td>
+              <td>**Dark missionary -** shortdesc</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="img/other/hol.png"/><img src="img/other/hol_buff.png"/></th>
+              <td>Gunbreaker</td>
+              <td>90s</td>
+              <td>**Heart of light -** shortdesc</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="img/other/magickbarrier.png"/><img src="img/other/magickbarrier_buff.png"/></th>
+              <td>Red Mage</td>
+              <td>120s</td>
+              <td>**Magick Barrier -** shortdesc</td>
+            </tr>
+          </tbody>
+          </table>
+        div>>{{bd-example}}
+        <<div
+          <p class="display-5" id="tinvuln">TANK INVULNERABILITIES</p>
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th scope="col">Visuals</th>
+              <th scope="col">Role</th>
+              <th scope="col">CD</th>
+              <th scope="col">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><img src="img/invulns/holm.png"/><img src="img/invulns/holm_buff.png"/></th>
+                <td>Warrior</td>
+                <td>240s</td>
+                <td>**Holmgang -** HP cannot go below 1 for 10s.</td>
+              </tr>
+              <tr><td colspan="4">
+                Very strong for its short cooldown, make sure you wait until half or most of the duration is expended before healing the Warrior, as Holmgang
+                does not reduce incoming damage and healing someone who can't die is wasteful. Usually, Warriors will use Equilibrium at the end of their Holmgang
+                for a very high self-heal before loosing their invulnerability status.
+              </td></tr>
+              <tr>
+                <th scope="row"><img src="img/invulns/ld.png"/><img src="img/invulns/ld_buff.png"/><img src="img/invulns/wd_buff.png"/></th>
+                <td>Dark Knight</td>
+                <td>300s</td>
+                <td>**Living dead -** Lasts for 10s. Triggers **Walking dead** instead of KO if HP becomes 0 for the duration.<br/>
+                **Walking dead -** HP cannot go below 1 for 10s.</td>
+              </tr>
+              <tr><td colspan="4">
+                Living dead on the left, Walking dead on the right.<br/>
+                Unapologically the worse invulnerability in the game. To remove the effect of **Walking dead**, the Dark Knight needs to have recovered
+                the equivalent of 100% of their HP. If Walking dead is not removed when its timer resolves, the Dark Knight dies immediately.<br/>
+                In other words you and your co-healer have to heal the Dark Knight for the **equivalent** of their total HP.
+                This does not mean their current HP needs to be equal to their max HP; this means they need to be healed an amount superior or equal to their maximum HP.
+                Bear in mind that, once you heal the Dark Knight enough, they will lose Walking Dead and thus their invulnerability status. Hence if you heal your Dark Knight
+                too much too quickly and dispell Walking Dead before their intended use for it is over, you will kill them.<br>
+                The White Mage, however, can simply discard their Benediction and resolve the situation at their leisure.
+              </td></tr>
+              <tr>
+                <th scope="row"><img src="img/invulns/sb.png"/><img src="img/invulns/sb_buff.png"/></th>
+                <td>Gunbreaker</td>
+                <td>360s</td>
+                <td>**Superbolide -** HP becomes 1 and makes all incoming damage 0 for 10s.</td>
+              </tr>
+              <tr><td colspan="4">
+                Don't panic, you have 10s of free time by the end of which you should make sure they have enough hp to survive whatever comes next.
+              </td></tr>
+              <tr>
+                <th scope="row"><img src="img/invulns/hg.png"/><img src="img/invulns/hg_buff.png"/></th>
+                <td>Paladin</td>
+                <td>420s</td>
+                <td>**Hallowed ground -** Makes all incoming damage 0 for 10s.</td>
+              </tr>
+              <tr><td colspan="4">
+                Forget about your Paladin for 10 seconds.
+              </td></tr>
+            </tbody>
+            </table>
+            Note that invulnerabilites do not work on certain very specific damage instances. The most common ones are bosses' *enrage* damage.
+          div>>{{bd-example}}
+      div>>
+    article>>{{my-3}}{id="st_otherabilities"}

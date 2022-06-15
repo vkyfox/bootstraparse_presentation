@@ -40,7 +40,7 @@ small:
 hyperlinks:
   bpr: '[text]("hyperlink")'
   markdown compatible: yes
-  accepts arguments: no
+  accepts arguments: no - should be yes
   type: in-line
   scope: first release
 

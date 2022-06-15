@@ -1,7 +1,7 @@
 <<aside
   ## Jump right in ##{{h6 pt-4 pb-3 mb-4 border-bottom}}
-  <nav class="small" id="toc">
-    <ul class="list-unstyled">
+  <<nav
+<ul class="list-unstyled">
       <li class="my-2">
         <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Understanding my co-healer</button>
         <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
@@ -10,11 +10,9 @@
           <li><a class="d-inline-flex align-items-center rounded" href="#ast">Astrologian</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#whm">White Mage</a></li>
           <li><a class="d-inline-flex align-items-center rounded" href="#group">Honorable mentions</a></li>
-
-            <li><a class="d-inline-flex align-items-center rounded" href="#roleac">  Role actions</a></li>
-            <li><a class="d-inline-flex align-items-center rounded" href="#jobac">  Job specific actions</a></li>
-            <li><a class="d-inline-flex align-items-center rounded" href="#tinvuln">  Tank invulnerabilities</a></li>
-
+            <li><a class="d-inline-flex align-items-center rounded" href="#roleac">-  Role actions</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="#jobac">-  Job specific actions</a></li>
+            <li><a class="d-inline-flex align-items-center rounded" href="#tinvuln">-  Tank invulnerabilites</a></li>
         </ul>
       </li>
       <li class="my-2">
@@ -41,5 +39,5 @@
         </ul>
       </li>
     </ul>
-  </nav>
+  nav>>{{small}}{id="toc"}
 aside>>{{bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2}}

@@ -1,20 +1,13 @@
 :: <_head.bpr>
 <body class="bg-light">
-:: <_header.bpr>
-
-:: <_aside.bpr>
-<<div
-  <<section
-    ## TL;DL ##{{sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3}}
-
-    <<article
-      <<div
-        ### Healer abilities ###
-        [Official jobguides]("https://na.finalfantasyxiv.com/jobguide/battle/"){{d-flex align-items-center}}
-      div>>{{@[structural_div_1]}}
-
-      <div>
-        ! TOO LONG; DIDN'T LEVEL ! {id='1'}
+:: <_header.bpr>:: <_aside.bpr><div class="bd-cheatsheet container-fluid bg-body">
+  <section id="content">
+    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">TL;DL</h2>    <article class="my-3" id="st_healerabilities">
+      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+        <h3>Healer abilities</h3>
+        <a class="d-flex align-items-center" href="https://na.finalfantasyxiv.com/jobguide/battle/">Official jobguides</a>
+      </div>      <div>
+        <p class="display-1" id="1">TOO LONG; DIDN'T LEVEL</p>
         <p class="lead">Words in italics can be found in the lexicon for more in-depth explanations.</p>
         <p class="display-3" id="sge">SAGE</p>
           <div class="bd-example">
@@ -28,7 +21,7 @@
               </thead>
               <tbody>
               <tr>
-                <th scope="row">@{sge}["kardia"]@{sge}[kardia_buff]</th>
+                <th scope="row"><img src="img/sge/kardia.png"/><img src="img/sge/kardia_buff.png"/></th>
                 <td>none</td>
                 <td><strong>Kardia -</strong> Low heal on the target for every offensive action from the caster.</td>
               </tr>
@@ -47,8 +40,8 @@
               </tr>
               <tr>
                 <td colspan="3">
-                This is the staple for all <em>raid damages</em>, due to its double part <em>regen</em>, 
-                keep an eye out for it being used early before incoming damage, as it can save 
+                This is the staple for all <em>raid damages</em>, due to its double part <em>regen</em>,
+                keep an eye out for it being used early before incoming damage, as it can save
                 you from <em>topping</em> the group yourself.
                 </td>
               </tr>
@@ -58,7 +51,7 @@
                 <td><strong>Physis II -</strong> Medium <em>regen</em> for 15s + 10% <em>healing action</em> buff for 10s.</td>
               </tr>
               <tr><td colspan="3">
-                Healing buff icon on the left, <em>regen</em> part on the right. 
+                Healing buff icon on the left, <em>regen</em> part on the right.
                 As it is a <em>healing action</em> potency buff, you can forget this effect in most instances.
                 The regen is potent however, so keep an eye out for it as it will have around
                 25% uptime.
@@ -69,8 +62,8 @@
                 <td><strong>Holos -</strong> 10% <em>mitigation</em> for 20s + medium heal.</td>
               </tr>
               <tr><td colspan="3">
-                The 20s duration is the very unusual part about this skill. Very efficient on long 
-                mechanics with lots of <em>repeat damage</em>. The healing part means you don't have to 
+                The 20s duration is the very unusual part about this skill. Very efficient on long
+                mechanics with lots of <em>repeat damage</em>. The healing part means you don't have to
                 <em>top</em> if you know your sage is gonna use it.
               </td></tr>
               <tr>
@@ -79,7 +72,7 @@
                 <td><strong>Panhaima -</strong> 5 times self-reapplying low shield for 15s. Leftover shields heal based on stacks left.</td>
               </tr>
               <tr><td colspan="3">
-                Very useful for <em>repeat damage</em>, as above. Do not forget the healing part, 
+                Very useful for <em>repeat damage</em>, as above. Do not forget the healing part,
                 as it will rarely ever use its five stacks in 15s.
               </td></tr>
               <tr>
@@ -88,7 +81,7 @@
                 <td><strong>Pneuma -</strong> High to Very High burst healing.</td>
               </tr>
               <tr><td colspan="3">
-                Much harder for you to keep track of, however you should keep it in in mind as 
+                Much harder for you to keep track of, however you should keep it in in mind as
                 it comes to no DPS loss for the Sage and is extremely potent.
                 Note that this is a <em>healing action</em>, meaning it benefits from all healing action buffs,
                 making it even more valuable.
@@ -315,15 +308,11 @@
           </table>
           </div>
         </div>
-      @[end_article]["st_healerabilities"]
-
-      <<article
+      </article>      <article class="my-3" id="st_otherabilities">
         <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
           <h3>Other abilities</h3>
           <a class="d-flex align-items-center" href="https://na.finalfantasyxiv.com/jobguide/">Official jobguides</a>
-        </div>
-  
-        <div>
+        </div>        <div>
           <p class="display-3" id="group">OTHER GROUP ACTIONS</p>
           <p class="display-5" id="roleac">ROLE ACTIONS</p>
           <div class="bd-example">
@@ -370,9 +359,7 @@
               </td></tr>
               </tbody>
             </table>
-          </div>
-
-      <div class="bd-example">
+          </div>      <div class="bd-example">
         <p class="display-5" id="jobac">JOB SPECIFIC</p>
         <table class="table table-striped">
           <thead>
@@ -486,9 +473,7 @@
             <p>Note that invulnerabilites do not work on certain very specific damage instances. The most common ones are bosses' <em>enrage</em> damage.</p>
           </div>
       </div>
-    @[end_article]["st_otherabilities"]
-
-    <<article
+    </article>    <article class="my-3" id="st_how2heal">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Play as a team</h3>
       </div>
@@ -496,19 +481,19 @@
         <p class="display-1">HOW TO PLAY AS A TEAM</p>
         <p class="display-3" id="healing">Healing</p>
         <div class="bd-example">
-          <p>What you heal, the other doesn't have to; and conversely what you don't heal, 
+          <p>What you heal, the other doesn't have to; and conversely what you don't heal,
             the other has to. This might sound very obvious, but what that really means is,
              always use anything you can.</p>
-          <p>As a duo, you want to keep everyone above 1HP using as little GCD healing as possible, 
-            so try to use at least one cooldown per raid damage until you don't have any left. If that 
-            happens, then try to figure out whether or not you could have spared a cooldown somewhere. 
-            If you couldn't, then clench your teeth really hard and GCD heal. I reiterate: 
-            as long as your group survives, that's all that matters. Being 1 or 100% HP does not 
-            make a difference. You only need hp as a buffer for taking damage. Don't GCD heal 
+          <p>As a duo, you want to keep everyone above 1HP using as little GCD healing as possible,
+            so try to use at least one cooldown per raid damage until you don't have any left. If that
+            happens, then try to figure out whether or not you could have spared a cooldown somewhere.
+            If you couldn't, then clench your teeth really hard and GCD heal. I reiterate:
+            as long as your group survives, that's all that matters. Being 1 or 100% HP does not
+            make a difference. You only need hp as a buffer for taking damage. Don't GCD heal
             if no one's gonna die.</p>
-          <p>On the other end of the spectrum, if there is too little damage and you 
-            sit on a spell for more than its total cooldown, sneak one use of it earlier. 
-            For example: if your first Physis II (60s CD) is at 1 minute 15, use it 
+          <p>On the other end of the spectrum, if there is too little damage and you
+            sit on a spell for more than its total cooldown, sneak one use of it earlier.
+            For example: if your first Physis II (60s CD) is at 1 minute 15, use it
             during your opener.</p>
         </div>
         <p class="display-3" id="raiseandlb">Raises & Limit Break</p>
@@ -522,15 +507,13 @@
             Regen Healer > Shield Healer
           </p>
           <p>Order is determined by two factors: mana management and utility.
-             Raising people is only useful if you can keep them alive. Using 
+             Raising people is only useful if you can keep them alive. Using
              a GCD and a lot of mana / animation locking yourself for 8 seconds
-              means you can't immediately heal, having a shield healer ready to 
+              means you can't immediately heal, having a shield healer ready to
               mitigate while the other is busy is generally the best option.</p>
         </div>
       </div>
-    @[end_article]["st_how2heal"]
-
-    <<article
+    </article>    <article class="my-3" id="st_lexicon">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
         <h3>Lexicon</h3>
       </div>
@@ -580,7 +563,7 @@
         </div>
         <div class="bd-example">
           <p class="display-5" id="lx_gtaoe">Ground-targeted AoE</p>
-          <p>A <em>Ground-targeted AoE</em> (area of effect) is an ability that is casted on the ground, rather than on a target. It has a visual representation in space 
+          <p>A <em>Ground-targeted AoE</em> (area of effect) is an ability that is casted on the ground, rather than on a target. It has a visual representation in space
             (often reffered to as "bubble") and only affects characters actively standing inside of them. The buff they grant is dynamically applied or removed
             as a character enters or exits the area for its duration.</p>
         </div>
@@ -596,11 +579,8 @@
           anyone's max HP and ignoring invulnerabilites to make extra sure the encounter is over once it has been cast. An encounter's maximum duration is often
           refered to as "enrage timer".</p>
         </div>
-      div>>{{bd-cheatsheet container-fluid bg-body}}
-    @[end_article]["st_lexicon"]
-
-  section>>{id="content"}
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+    </article>  </section><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="cheatsheet.js"></script>
   </body>
 </html>
