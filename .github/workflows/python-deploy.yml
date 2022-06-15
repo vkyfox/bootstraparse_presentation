@@ -27,9 +27,6 @@ jobs:
           pip install -e .
           pip install pydoctor
           python -m bootstraparse "website" "docs"
-      - name: Build the documentation
-        run: |
-          pydoctor --make-html --html-output=docs/apidoc src/bootstraparse/
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
