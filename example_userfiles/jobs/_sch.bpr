@@ -1,0 +1,104 @@
+!!! SCHOLAR !!! {id="sch"}
+  <<div
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Visuals</th>
+      <th scope="col">CD</th>
+      <th scope="col">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">
+      @{sch}["selene"] @{sch}["eos"]
+      </th>
+      <td>none</td>
+      <td>**Eos/Selene -** Scholar's passive healing pet. Low heal every 2.5s on the absolute lowest health.</td>
+    </tr>
+    <tr><td colspan="3">
+      The faerie will passively heal any party member who goes below 80% HP. She's easily distracted but she's trying her best. Should help in keeping the tanks afloat.
+    </td></tr>
+                <tr>
+      <th scope="row">
+      @{sch}["seraph"] @{sch}["seraph_consolation"] @{sch}["seraph_whisper"] @{sch}["seraph_illumination"]
+      </th>
+      <td>120s</td>
+      <td>**Seraph -** Faerie adds a shield to all of her heals for 20s.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{sch}["feyunion"] @{sch}["feyunion_buff"]
+      </th>
+      <td>none</td>
+      <td>**Fey union -** Extremely strong single-target *regen*.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{sch}["sacredsoil"] @{sch}["sacredsoil_buff"]
+      </th>
+      <td>30s</td>
+      <td>**Sacred soil -** *Ground-targeted AoE* granting 15s *mitigation* and *regen*.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{sch}["excogitation"] @{sch}["excogitation_buff"]
+      </th>
+      <td>60s</td>
+      <td>**Excogitation -** Delayed single-target strong heal.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{sch}["whisperingdawn"] @{sch}["whisperingdawn_buff"]
+      </th>
+      <td>60s</td>
+      <td>**Whispering dawn -** Low *regen* for 21s.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{sch}["recitation"] @{sch}["deploymenttactics"]
+      </th>
+      <td>90s</td>
+      <td>**Recitation/Deployment tactics -** Automatically crit any heal/Spreads a single-target shield.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{sch}["feyillumination"] @{sch}["feyillumination_buff"]
+      </th>
+      <td>120s</td>
+      <td>**Fey illumination -** 5% *mitigation* + 10% *healing* action buff for 20s.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    <tr>
+      <th scope="row">
+      @{sch}["expedient"] @{sch}["expedient_buff"]
+      </th>
+      <td>120s</td>
+      <td>**Expedient -** 10% *mitigation* + sprint for 20s.</td>
+    </tr>
+    <tr><td colspan="3">
+      longdesc
+    </td></tr>
+    </tbody>
+  </table>
+  div>>{{bd-example}}

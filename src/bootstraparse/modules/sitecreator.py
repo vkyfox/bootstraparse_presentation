@@ -1,7 +1,9 @@
 # Module sequencing the successive actions necessary for website building
 import os
 
-from bootstraparse.modules import pathresolver, sitecrawler, environment, config, export, parser, context_mngr
+from bootstraparse.modules import pathresolver, sitecrawler, environment, config, export, parser, context_mngr, error_mngr
+
+error_mngr.init_logging(loglevel="DEBUG", filename="log.txt")
 
 
 def create_website(origin, destination):
