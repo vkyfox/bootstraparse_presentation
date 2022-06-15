@@ -1,7 +1,7 @@
 <<article
         <<div
           ### Other abilities ###
-          [Official jobguides]("https://na.finalfantasyxiv.com/jobguide/"){{d-flex align-items-center}}
+          <a class="d-flex align-items-center" href="https://na.finalfantasyxiv.com/jobguide/battle/">Official jobguides</a>
         div>>{{bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2}}
         <<div
           !!! OTHER GROUP ACTIONS !!! {id="group"}
